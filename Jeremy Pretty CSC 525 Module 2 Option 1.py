@@ -9,11 +9,11 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 #path = "(https://gist.githubusercontent.com/gurchetan1000/ec90a0a8004927e57c24b20a6f8c8d35/raw/fcd83b35021a4c1d7f1f1d5dc83c07c8ffc0d3e2/iris.csv"
-#path = "iris.csv"
+path = "iris.csv"
 headernames = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'Class']
 
 #dataset = pd.read_csv(path, names=headernames)
-dataset = pd.read_csv("iris.csv", names=headernames)
+dataset = pd.read_csv(path, names=headernames)
 dataset.head()
 
 X = dataset.iloc[:, :-1].values
